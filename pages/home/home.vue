@@ -1,6 +1,6 @@
 <template>
-	<view>
-		
+	<view class="a">
+		131321132132132132
 	</view>
 </template>
 
@@ -11,12 +11,21 @@
 				
 			}
 		},
+		onLoad() {
+			this.getSwiperList()
+		},
 		methods: {
-			
+			async getSwiperList() {
+				const {data:res}=await uni.$http.get('/api/public/v1/home/swiperdata')
+				console.log(res)
+			}
 		}
 	}
 </script>
 
-<style>
-
+<style lang="scss">
+	
+.a{
+	color: aqua;
+}
 </style>
