@@ -1,25 +1,33 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	    ,{
             "path" : "pages/home/home",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
             
         }
         ,{
-            "path" : "pages/home/home",
+            "path" : "pages/cate/cate",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/cart/cart",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
                 "enablePullDownRefresh": false
             }
             
@@ -40,9 +48,38 @@
             ]
 		}
 	],
+	"tabBar": {
+		"selectedColor": "#C00000",
+		"list": [
+			{
+			"pagePath": "pages/home/home",
+			"text": "首页",
+			"iconPath": "",
+			"selectedIconPath": ""
+			},
+			{
+			"pagePath":"pages/cate/cate",
+			"text": "分类",
+			"iconPath": "",
+			"selectedIconPath": ""
+			},
+			{
+			"pagePath":"pages/cart/cart",
+			"text": "购物车",
+			"iconPath": "",
+			"selectedIconPath": ""
+			},
+			{
+			"pagePath":"pages/my/my",
+			"text": "我",
+			"iconPath": "",
+			"selectedIconPath": ""
+			}
+		]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "优购",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
