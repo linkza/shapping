@@ -24,7 +24,52 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.a {
-  color: aqua;
+.home-container {
+  height: 100vh;
+  overflow: auto;
+}
+.home-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+}
+.swiper-item {
+  height: 300rpx;
+}
+.swiper-item image {
+  height: 100%;
+  width: 100%;
+}
+.nav-list {
+  height: 140rpx;
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+.nav-list .nav-img {
+  width: 128rpx;
+  height: 140rpx;
+}
+.floor-title {
+  height: 60rpx;
+  width: 100%;
+  display: flex;
+}
+.floor-img-box {
+  margin-left: 12rpx;
+  display: flex;
+}
+.floor-img-box .right-img-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.floor-img-box .right-img-box .right-img-item {
+  margin-left: 14rpx;
+}
+.search-box {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 

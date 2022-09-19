@@ -50,6 +50,12 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
+		"requiredPrivateInfos": [
+		  "getLocation",
+		  "onLocationChange",
+		  "startLocationUpdateBackground",
+		  "chooseAddress"
+		],
         "appid" : "wxd0271dca25935ca6",
         "setting" : {
             "urlCheck" : true,
